@@ -1,1 +1,1 @@
-# uyghur-library
+# Capstone Project
