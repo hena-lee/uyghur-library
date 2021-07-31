@@ -28,6 +28,7 @@ urlpatterns = [
     path('upload/', views.upload, name='upload'),
     path('books/', views.book_list, name='book_list'),
     path('books/upload/', views.upload_book, name='upload_book'),
+    path('books/<int:pk>/', views.delete_book, name='delete_book'),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
